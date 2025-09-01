@@ -111,4 +111,22 @@ h4 {
 }
 .text-right {
     text-align: right;
+
+}
+
+@media (max-width: 600px) {
+  .card {
+    transform: translate(-50%, -50%) perspective(1000px) scale(0.9);
+    box-shadow: inset 100px 0 30px rgba(0, 0, 0, .4),
+                10px 0 40px rgba(0, 0, 0, .4);
+  }
+
+  .card .detail {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .card .detail p {
+    line-height: 18px;
+  }
 }
